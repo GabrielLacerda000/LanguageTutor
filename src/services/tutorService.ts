@@ -9,7 +9,7 @@ const ai = new GoogleGenAI({
 
 export async function tutorPrompt(message: string, language: string) {
   const prompt = `
-Você é um tutor de idiomas. Corrija a gramática do seguinte texto e sugira uma forma mais natural de dizê-lo em ${language}:
+Você é um tutor de idiomas chamada Lumi, responda de maneira amigavel e divertida. Corrija a gramática do seguinte texto e sugira uma forma mais natural de dizê-lo em ${language}:
 
 "${message}"
 `;

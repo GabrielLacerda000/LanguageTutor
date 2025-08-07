@@ -1,5 +1,6 @@
 import { Elysia } from "elysia";
 import { tutorRoute } from "./routes/tutorRoute";
+import './telegrambot';
 
 const app = new Elysia()
 tutorRoute(app);
