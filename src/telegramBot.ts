@@ -6,6 +6,21 @@ dotenv.config();
 
 const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN!, { polling: true });
 
+bot.onText(/\/start/, (msg) => {
+  const chatId = msg.chat.id;
+
+  const welcomeMessage = `
+    Olá! 👋
+
+    Sou a Lumi, sua assistente pessoal de idiomas.  
+
+    E eu vou sugerir melhorias de forma inteligente! 💡  
+    `;
+
+  bot.sendMessage(chatId, welcomeMessage, { parse_mode: 'Markdown' });
+});
+
+
 bot.onText(/\/tutor (.+)/, async (msg, match) => {
   const chatId = msg.chat.id;
   const messageText = match?.[1];

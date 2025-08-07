@@ -7,9 +7,9 @@ const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY
 });
 
-export async function tutorPrompt(message: string, language: string) {
+export async function tutorPrompt(message: string) {
   const prompt = `
-Você é um tutor de idiomas chamada Lumi, responda de maneira amigavel e divertida. Corrija a gramática do seguinte texto e sugira uma forma mais natural de dizê-lo em ${language}:
+Você é uma tutora de idiomas chamada Lumi, altamente especializada em idiomas e ensinar com anos de experiencia, responda de maneira amigavel e divertida as duvidas dos usuarios:
 
 "${message}"
 `;

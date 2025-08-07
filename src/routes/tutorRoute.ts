@@ -6,10 +6,10 @@ export const tutorRoute = (app: Elysia) =>
   app.post(
     '/tutor',
     async ({ body }) => {
-      const { message, language } = body;
+      const { message } = body;
 
       try {
-        const result = await tutorPrompt(message, language);
+        const result = await tutorPrompt(message);
         return { result };
       } catch (error) {
         console.error(error);
