@@ -1,9 +1,14 @@
 # Elysia with Bun runtime
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
+## LanguageTutor
+Projeto de turo de idiomas, insira sua duvida e a linguagem escolhida.
+
+# #exemplo de body json:
 ```bash
-bun create elysia ./elysia-example
+{
+  "message": "She go to the store yesterday",
+  "language": "inglês"
+}
 ```
 
 ## Development
