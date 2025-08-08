@@ -7,7 +7,6 @@ Projeto de turo de idiomas, insira sua duvida e a linguagem escolhida.
 ```bash
 {
   "message": "She go to the store yesterday",
-  "language": "inglês"
 }
 ```
 
